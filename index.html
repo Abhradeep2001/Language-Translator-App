@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language translator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Cdn -->
+    <script src="https://kit.fontawesome.com/23582092fc.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #DFFFD8;">
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="fromText" placeholder="Enter your Text" spellcheck="false" required></textarea>
+                <textarea class="toText" placeholder="Translated Text" spellcheck="false" readonly></textarea>
+            </div>
+            <ul class="control" style="list-style-type: none;">
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from" class="fas fa-volume-up"></i>
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
+                    <select></select>
+                </li>
+                <li class="exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                </li>
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-volume-up"></i>
+                        <i id="to" class="fas fa-copy"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button>Translate Text</button>
+    </div>
+    <!-- JavaScript  -->
+    <script src="JavaScript/countries.js"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
